@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FRONT PAGE  DESIGN CODE START  -->
+    
+
+    <div class="container" id="first">
+
+      <div class="left_side">
+        <p style="color: #ffffff; font-size: 20px">ROCK</p>
+        <p style="color: #ffffff; font-size: 20px">PAPER</p>
+        <p style="color: #ffffff; font-size: 20px">SCISSORS</p>
+      </div>
+
+
+      <div class="score-bord">
+
+        <div class="score">
+        <p> COMPUTER <br>SCORE</p>
+          <span id="comp-score" style="font-size: 35px;">0</span>
+        </div>
+
+        <div class="score">
+        <p>YOUR <br>SCORE</p>
+          <span id="user_score" style="font-size: 35px;">0</span>
+        </div>
+
+      </div>
+    </div>
+
+<!-- CHOICE SECTION START -->
+
+ 
+ <div class="choices" id="second">
+  <div class="triangle" id="tri"> </div>
+
+  <div class="choice" id="paper">
+    <img src="images/Group 1.png" />
+    <img src="images/icons8-hand-64 1.png" class="sign1" />
+  </div>
+
+  <div class="choice" id="rock">
+    <img src="images/Group 2 (1).png" />
+    <img src="images/icons8-fist-67 1.png" class="sign1" />
+  </div>
+
+  <div class="choice" id="scissors">
+    <img src="images/Group 3.png" />
+    <img src="images/17911 1 (1).png" class="sign1" />
+  </div>
+
+  </div>
+
+   <img id="one" src="images/Group 4 copy.png" alt="" />
+
+  <!-- CHOICE SECTION END -->
+
+
+  <footer class="footer" id="third">
+    <button onclick="rulesShow()">RULES</button>
+  </footer>
+
+  <!-- FRONT PAGE CODE DESIGN END -->
+
+
+<!-- LOOSE SECTION START -->
+
+<div class="loose_con" id="lost">
+    <div class="left_side">
+      <p style="color: #ffffff; font-size: 20px">ROCK</p>
+      <p style="color: #ffffff; font-size: 20px">PAPER</p>
+      <p style="color: #ffffff; font-size: 20px">SCISSORS</p>
+    </div>
+    <div class="score-bord">
+
+      <div class="score">
+      <p> COMPUTER <br>SCORE</p>
+        <span id="comp-score" style="font-size: 35px;">1</span>
+      </div>
+
+      <div class="score">
+      <p>YOUR <BR>SCORE</p>
+        <span id="user_score" style="font-size: 35px;">0</span>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="loose_img" id="looser_img">
+    <img src="images/YOU PICKED.png" alt="" class="you"/>
+    <img src="images/PC PICKED.png" alt="" class="pc"/>
+  </div>
+
+  <div class="loose_module" id="loose">
+    <img src="images/Group 2 (3).png" alt="" />
+    <p>YOU LOST <br />AGAINS PC</p>
+    <img src="images/Group 1 (1).png" alt="" id="looser"/>
+  </div>
+
+
+  <button id="loose_btn">PLAY AGAIN</button>
+
+  <button id="rules_btn" style= "float: right; display: none;">RULES</button>
+
+
+  <!-- LOOSE SECTION END -->
+  
+
+<!-- TIE/DRAW SECTION START -->
+
+  <div class="tie_module" id="draw">
+    <div class="left_side">
+      <p style="color: #ffffff; font-size: 20px">ROCK</p>
+      <p style="color: #ffffff; font-size: 20px">PAPER</p>
+      <p style="color: #ffffff; font-size: 20px">SCISSORS</p>
+    </div>
+
+    <div class="score-bord">
+
+      <div class="score">
+      <p> COMPUTER <br>SCORE</p>
+        <span id="comp-score" style="font-size: 35px;">1</span>
+      </div>
+
+      <div class="score">
+      <p>YOUR <BR>SCORE</p>
+        <span id="user_score" style="font-size: 35px;">1</span>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="cls"style="display: flex;justify-content: space-between;align-items: center;
+    display: none;">
+    <p style="margin-left: 420px; margin-top: 150px; color: #ffffff">
+      YOU PICKED</p> <br/>
+    <p style="margin-right: 410px; margin-top: 120px; color: #ffffff">
+      PC PICKED</p>
+  </div>
+
+
+  <div class="tie" id="tie_game">
+    <img src="images/Group 4 (1).png" alt="" />
+    <p>TIE UP</p>
+    <img src="images/Group 4 (1).png" alt="" />
+  </div>
+
+  <button id="btn">REPLAY</button>
+
+
+  <button id="tie_btn" style="display: none; float: right">RULES</button>
+
+
+  <!-- TIE/DRAW SECTION END -->
+
+
+
+<!-- WINNER SECTION START -->
+
+<div class="winer_module" id="winer">
+
+  <div class="left_side">
+    <p style="color: #ffffff; font-size: 20px">ROCK</p>
+    <p style="color: #ffffff; font-size: 20px">PAPER</p>
+    <p style="color: #ffffff; font-size: 20px">SCISSORS</p>
+  </div>
+
+  <div class="score-bord">
+
+    <div class="score">
+    <p> COMPUTER <br>SCORE</p>
+     <span id="comp-score" style="font-size: 35px;">0</span>
+    </div>
+
+    <div class="score">
+    <p>YOUR <BR>SCORE</p>
+      <span id="user_score" style="font-size: 35px;">1</span>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="winer_img" id="winer_sec">
+  <!-- <img src="images/PC PICKED.png" alt="" class="pc_pick" /> -->
+
+  <img src="images/YOU PICKED.png" alt="" class="you_pick" />
+<img src="images/PC PICKED.png" alt="" class="pc_pick" />
+</div>
+
+
+<div class="win_module" id="win">
+  <img class="win_img" src="images/Group 1 (1).png" alt="" id="won" />
+  <p>YOU WIN <br />AGAINTS PC</p>
+  <img class="win_img" src="images/Group 2 (3).png" alt="" />
+</div>
+
+
+<button id="win_btn">PLAY AGAIN</button>
+
+<div>
+<a href="next.html"> <button style="float: right; display: none; text-align: center "
+    id="next_btn"> NEXT</button></a>
+    <button id="winer_rules" style="display: none; float: right">RULES</button>
+</div>
+
+
+<!-- WINNER SECTION  END -->
+
+
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

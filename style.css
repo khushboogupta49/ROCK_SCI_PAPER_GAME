@@ -1,0 +1,492 @@
+body{
+  background-color: #8cc461;
+  Width:1280px;
+Height:738px;
+Top:205px;
+Left:-509px;  
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid white;
+    width: 800px;
+    height: 158px;
+    top:62px;
+    left: 240px;
+    margin: auto;
+    border-radius: 13px;
+    
+}
+ 
+.left_side{
+Width:119px;
+height: 120px;
+top: 300px;
+
+margin-left: 20px;
+
+} 
+ 
+.score-bord{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.score{
+border: 1px solid white;
+margin: 15px;
+width: 180px;
+height: 130px;
+text-align: center;
+font-size: 20px;
+border-radius: 15px;
+background-color: #FFFFFF;
+
+}
+
+
+/* CHOICES SECTION CSS START  */
+
+#rock, #paper , #scissor{
+position: relative;
+display: inline-block;
+}
+
+.sign1{
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+}
+.choices{
+position: relative;
+display: inline-block;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#rock{
+position: absolute;
+top: 75%;
+left: 50%;
+transform: translate(-50%,-50%);
+background: none;
+border: none;
+}
+
+#paper{
+position: absolute;
+bottom: 42%;
+right: 50%;
+transform: translate(-50%,-50%);
+background: none;
+border: none;
+}
+
+#scissors{
+position: absolute;
+bottom: 45%;
+left: 60%;
+transform: translate(-40%,-40%);
+background: none;
+border: none;
+}
+
+.triangle{
+width:0px;
+height:0px;
+margin: 130px auto;
+position: relative;
+border-left: 140px solid transparent;
+border-right: 140px solid transparent;
+border-top: 230px solid #656565;
+
+}
+
+.triangle:before{
+content:"";
+width: 0px;
+height: 0px;
+position: absolute;
+border-left: 120px solid transparent;
+border-right: 120px solid transparent;
+border-top: 200px solid #89C15E ;
+bottom:20px;
+left:-120px;
+
+}
+ 
+/* CHOICE SECTION CSS END */
+
+#one{
+  Width:303px;
+  Height:367px;
+  Top:288px;
+  Left:964px;
+  margin-left: 120px;
+  margin-left: 300px;
+  border-radius: 13px;
+  margin-top: -450px;
+   display: none;
+   float: right;
+   
+}
+
+.footer{
+  float: right;
+  /* display: none; */
+}
+
+button{
+Width:119px;
+Height:40px;
+Top:675px;
+Left:1136px;
+border-radius:10px ;
+background-color:#8cc461;
+color: #FFFFFF;
+font-family:Roboto ;
+font-size: 21px;
+font-weight: 600;
+border: 1px solid #FFFFFF;
+cursor: pointer;
+
+}
+  
+
+
+/* MATCH DRAW/TIE CSS START */
+
+.tie_module{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 2px solid white;
+width: 800px;
+height: 158px;
+top:62px;
+left: 240px;
+margin: auto;
+border-radius: 13px;
+display: none;
+}
+
+ 
+.score-bord{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.score{
+border: 1px solid white;
+margin: 15px;
+width: 180px;
+height: 130px;
+text-align: center;
+font-size: 20px;
+border-radius: 15px;
+background-color: #FFFFFF;
+}
+
+.tie{
+display: flex;
+justify-content: center;
+text-align: centers;
+gap: 2.5rem;
+object-fit: cover;
+margin-top: 2rem;
+display: none; 
+}
+
+.tie img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-top: -25px;
+}
+.tie p{
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 25px;
+  gap: 1px;
+  color: #FFFFFF;
+}
+
+#btn{
+  margin-left: 45%;
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: none;
+  margin-top: -65px;
+  text-align: center;    
+}
+
+#tie_btn{
+  padding: 10px 10px;
+  margin: 10px;
+  width: 100px;
+  }
+
+/* MATCH DRAW/TIE CSS END */
+
+
+
+/* WINNER SECTION CSS START */
+
+.winer_module{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 2px solid white;
+width: 800px;
+height: 158px;
+top:62px;
+left: 240px;
+margin: auto;
+border-radius: 13px;
+display: none;
+
+}
+
+.left_side{
+  Width:119px;
+  height: 120px;
+  top: 665px;
+  margin-left: 20px;
+  }
+
+  .score-bord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .score{
+  border: 1px solid white;
+  margin: 15px;
+  width: 180px;
+  height: 130px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  }
+
+.win_module{
+display: flex;
+justify-content: center;
+text-align: centers;
+gap: 2.5rem;
+margin-top: 4rem;
+display: none;
+}
+
+#won{
+background-color:#2E9A25 ;
+box-shadow:5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.win_img {
+height: 150px;
+width: 150px;
+border-radius: 50%;
+}
+
+.win_module p{
+text-align: center;
+margin-top: 3.5rem;
+font-size: 25px;
+gap: 1px;
+color: #FFFFFF;
+} 
+
+#win_btn{
+margin-left: 44%;
+border-radius: 10px;
+width: 150px;
+border: 1px solid white;
+align-items: center;
+display: none;
+margin-top: -25px;
+
+}
+
+.winer_img{
+display: flex;
+justify-content: center;
+align-items: center;
+display: none;
+}
+
+.pc_pick{
+margin-left: 270px; 
+margin-top: 150px;
+}
+
+.you_pick{
+margin-top: 150px;
+}
+
+
+#next_btn{
+  text-align: center;
+  margin: 10px;
+  width: 100px;
+  padding: 10px 17px;
+}
+
+  #winer_rules{
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    padding: 10px 10px;
+     }
+
+/* WINNER CSS SECTION END */
+
+
+/* LOOSE SECTION  CSS START */
+
+.loose_con{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border: 2px solid white;
+width: 800px;
+height: 158px;
+top:62px;
+left: 240px;
+margin: auto;
+border-radius: 13px;
+display: none;
+}
+
+.left_side{
+Width:119px;
+height: 120px;
+top: 665px;
+margin-left: 20px;
+
+} 
+ 
+.score-bord{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score{
+border: 1px solid white;
+margin: 15px;
+width: 180px;
+height: 130px;
+text-align: center;
+font-size: 20px;
+border-radius: 15px;
+background-color: #FFFFFF;
+
+}
+.loose_module{
+display: flex;
+justify-content: center;
+text-align: centers;
+gap: 4.5rem;
+margin-top: 3rem;
+display: none;
+
+}
+
+
+#looser{
+background-color:#2E9A25 ;
+border-radius: 650%;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.loose_module img {
+height: 150px;
+width: 150px;
+border-radius: 50%;
+}  
+
+.loose_module p{
+text-align: center;
+margin-top: 3rem;
+font-size: 25px;
+gap: 1px;
+color: #FFFFFF;
+} 
+
+#loose_btn{
+margin-left: 43%;
+border-radius: 14px;
+padding: 10px 20px;
+margin-bottom:  2rem;
+border: 1px solid white;
+width: 180px;
+height: 35px;
+align-items: center;
+display: none;
+margin-top: -22px;
+} 
+
+
+.loose_img{
+display: flex;
+justify-content: space-between;
+align-items: center;
+display: none;
+}
+
+.you{
+margin-left: 380px;
+margin-top: 100px;
+}
+.pc{
+margin-right: 380px;
+margin-top: 80px;
+}
+
+#rules_btn{
+  padding: 5px 15px;
+}
+
+
+
+/* LOOSE SECTION END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
